@@ -1,15 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Country } from '../types/country';
-import { TouchableOpacity } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-import { StackNavigationProp } from '@react-navigation/stack';
-import { RootStackParamList } from '../types/navigationTypes'; // Adjust the import path as necessary
-
+import { Platform } from 'react-native';
+import { NavigationProp } from '../types/navigationTypes';
 
 type Props = {
   country: Country;
-};  
+};
 
 const CountryItem: React.FC<Props> = ({ country }) => {
 

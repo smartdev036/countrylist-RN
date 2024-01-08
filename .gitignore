@@ -64,3 +64,64 @@ yarn-error.log
 
 # testing
 /coverage
+# Dependencies
+/node_modules
+
+# Generated files
+/android/app/build
+/ios/build
+/ios/Pods
+
+# Various IDEs
+.idea/
+*.iml
+*.hprof
+*.swp
+.vscode/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Keystore files (Android)
+*.jks
+*.keystore
+
+# Gradle files
+.android/
+.gradle
+/local.properties
+
+# Fastlane files
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Detox
+detox_artifacts/
+
+# Watchman
+.watchmanconfig
+
+# Environment files
+.env*
+!.env.example
+
+# Babel cache
+babel.config.js
+metro.config.js
+metro-bundler-config-yarn-error.log*
+
+# Expo files
+expo-shared/

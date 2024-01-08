@@ -10,3 +10,13 @@ export const fetchCountries = async (): Promise<Country[]> => {
     code: apiCountry.cca2,
   }));
 };
+
+export const fetchCountryDetails = async (countryCode: string) => {
+  try {
+    const response = await axiosInstance.get(`/alpha/${countryCode}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching country details:', error);
+    throw error;
+  }
+};

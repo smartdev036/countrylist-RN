@@ -47,7 +47,7 @@ const HomeScreen: React.FC = () => {
     return (
         <View style={styles.container}>
             {isLoading ? (
-                <ActivityIndicator size="large" color="#0000ff" />
+                <ActivityIndicator size="large" color="#0000ff" testID='activity-indicator'/>
             ) : (
                 <FlatList
                     data={countries}
